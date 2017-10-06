@@ -19,7 +19,56 @@
   src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+* {
+  box-sizing: border-box; }
+
 body {
-  font-family: 'maven_proregular'; }
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.btn {
+  padding: 20px 35px; }
+
+.wrapper {
+  width: 1920px;
+  padding: 0 45px; }
+
+.navigation-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px; }
+
+.navigation__logo {
+  display: flex;
+  align-items: center; }
+  .navigation__logo span {
+    font: 1.87em/1 "maven_probold", sans-serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase; }
+  .navigation__logo img {
+    max-width: 100%;
+    margin-right: 15px; }
+
+.navigation__list {
+  display: flex;
+  align-items: baseline;
+  font: 1em/1.19 "maven_promedium", sans-serif; }
+  .navigation__list ul {
+    display: flex; }
+    .navigation__list ul a {
+      display: block;
+      padding: 20px 30px; }
+
+ul li:last-child a {
+  margin-right: 30px; }
 
 /*# sourceMappingURL=styles.css.map */

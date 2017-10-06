@@ -1,3 +1,73 @@
-body {
-	font-family: 'maven_proregular';
+* {
+	box-sizing: border-box;
 }
+
+body {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	padding: 20px 35px;
+}
+
+.wrapper {
+	width: 1920px;
+	padding: 0 45px;
+}
+
+.navigation-block {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.navigation__logo {
+	display: flex;
+	align-items: center;
+
+		span {
+			font: 1.87em/1 $header__font-bold;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;	
+		}
+
+		img {
+			max-width: 100%;
+			margin-right: 15px;
+		}
+}
+
+.navigation__list {
+	display: flex;
+	align-items: baseline;
+	font: 1em/1.19 $header__font-medium;
+
+	ul {
+		display: flex;
+
+		a {
+			display: block;
+			padding: 20px 30px; 
+		}
+	}
+}
+
+ul li:last-child a {
+	margin-right: 30px;
+}
+
+
+
