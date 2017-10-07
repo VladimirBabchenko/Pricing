@@ -35,21 +35,40 @@ li {
 a {
   text-decoration: none; }
 
+p {
+  margin: 0; }
+
+h1, h2, h3 {
+  margin: 0; }
+
 .btn {
-  padding: 20px 35px; }
+  padding: 18px 35px;
+  border-radius: 33px;
+  font: 0.75em/1 "maven_probold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
+
+header {
+  background: url("../img/banner.jpg") center center no-repeat, linear-gradient(90deg, #6f4ae0, #86c6d0);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  padding-bottom: 47px;
+  padding-top: 50px;
+  color: #fff; }
 
 .wrapper {
-  width: 1920px;
+  width: 1900px;
+  margin: 0 auto;
   padding: 0 45px; }
 
 .navigation-block {
   display: flex;
-  justify-content: space-between;
-  margin-top: 50px; }
+  justify-content: space-between; }
 
 .navigation__logo {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: #fff; }
   .navigation__logo span {
     font: 1.87em/1 "maven_probold", sans-serif;
     letter-spacing: 0.15em;
@@ -64,11 +83,469 @@ a {
   font: 1em/1.19 "maven_promedium", sans-serif; }
   .navigation__list ul {
     display: flex; }
+    .navigation__list ul li {
+      min-height: 61px; }
     .navigation__list ul a {
       display: block;
-      padding: 20px 30px; }
+      padding: 20px 30px;
+      color: #fff;
+      transition: border-bottom 100ms;
+      white-space: nowrap; }
+      .navigation__list ul a:hover {
+        border-bottom: 2px solid #fff; }
+
+.navigation__btn {
+  color: #fff;
+  border: 1px solid #fff;
+  min-width: 158px;
+  transition: background-color 100ms; }
+  .navigation__btn:hover {
+    background-color: #6e45e2; }
 
 ul li:last-child a {
   margin-right: 30px; }
+
+.header__content {
+  margin-top: 172px;
+  text-align: center; }
+  .header__content .header__arrow-bottom {
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    font-size: 0;
+    background-color: #fff;
+    border: 64px;
+    border-radius: 64px; }
+    .header__content .header__arrow-bottom::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 36%;
+      top: 38%;
+      opacity: 0.6;
+      background: url(../img/sprite.png) -20px -774px no-repeat; }
+  .header__content .header__arrow-bottom:hover::before {
+    opacity: 1; }
+
+.about {
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  margin-bottom: 28px;
+  font: 0.87em/2.28 "maven_probold", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+  .about::before, .about::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 1px;
+    background-color: #fff;
+    top: 45%; }
+  .about::before {
+    left: 0; }
+  .about::after {
+    right: 0; }
+
+.title {
+  font: 5.37em/1 "maven_promedium", sans-serif;
+  letter-spacing: -0.06em;
+  text-align: center; }
+
+.description {
+  max-width: 380px;
+  margin: 20px auto 174px auto;
+  font: 1em/1.75 "maven_proregular", sans-serif; }
+
+@media screen and (max-width: 1899px) {
+  .wrapper {
+    width: 100%; } }
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 15px; }
+
+  .wrapper {
+    padding: 0 25px; }
+
+  header {
+    padding-top: 30px; }
+
+  .header__content {
+    margin-top: 100px; }
+
+  .description {
+    margin-bottom: 110px; }
+
+  .navigation__list ul a {
+    padding: 20px 20px; } }
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 15px; }
+
+  header {
+    padding-top: 20px; }
+
+  .navigation__list ul li {
+    min-height: 75px; }
+
+  .navigation__list ul a {
+    padding: 10px 15px; }
+
+  .navigation__logo {
+    flex-direction: column; }
+    .navigation__logo span {
+      padding-top: 5px;
+      font-size: 1.2em; }
+    .navigation__logo img {
+      margin-right: 0; }
+
+  .navigation__list .btn {
+    min-width: inherit;
+    padding: 14px 27px;
+    margin: auto; }
+
+  .navigation__list li:last-of-type a {
+    margin-right: 5px; }
+
+  .navigation__list li a {
+    line-height: 3.5em; }
+
+  .header__content {
+    margin-top: 50px; }
+
+  .description {
+    margin-bottom: 70px; } }
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 4em; }
+
+  .navigation-block {
+    display: block; }
+
+  .navigation__logo {
+    margin-bottom: 10px; }
+
+  .navigation__list {
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .navigation__list li a {
+      line-height: 1.5em; }
+    .navigation__list nav {
+      flex: 1; }
+      .navigation__list nav ul {
+        justify-content: space-around; }
+
+  .navigation__list .btn {
+    margin: 0; }
+
+  .header__content {
+    margin-top: 20px; } }
+@media screen and (max-width: 650px) {
+  body {
+    font-size: 14px; }
+
+  .navigation__list .btn {
+    flex-basis: 166px;
+    margin: auto;
+    text-align: center; }
+
+  .navigation__list li:last-of-type a {
+    margin-right: 0; }
+
+  .title {
+    font-size: 3em;
+    letter-spacing: 0; } }
+@media screen and (max-width: 455px) {
+  .navigation__list ul {
+    flex-wrap: wrap; }
+
+  .navigation__list nav {
+    flex-basis: 100%; }
+
+  .navigation__list ul li {
+    min-height: 30px;
+    margin-bottom: 10px; }
+
+  .navigation__list li a {
+    line-height: 0.5em; }
+
+  .navigation__list .btn {
+    margin-top: 10px; }
+
+  .header__content {
+    margin-top: 40px; }
+
+  .description {
+    margin-bottom: 50px; }
+
+  .wrapper {
+    padding: 0 10px; } }
+.packages__wrapper {
+  width: 1510px;
+  margin: 0 auto; }
+
+.packages {
+  padding-top: 111px;
+  padding-bottom: 119px;
+  text-align: center;
+  color: #9fa4af; }
+  .packages .packages__about {
+    margin-bottom: 13px; }
+    .packages .packages__about::before, .packages .packages__about::after {
+      background-color: #6e45e2; }
+  .packages .packages__title {
+    font: 3.75em/1.2 "maven_promedium", sans-serif;
+    letter-spacing: inherit;
+    color: #4f4f6f; }
+  .packages .packages__description {
+    margin-bottom: 100px; }
+
+.packages__list {
+  display: flex;
+  justify-content: center; }
+  .packages__list article:nth-of-type(2)::before {
+    background: url("../img/sprite.png") -12px -233px no-repeat; }
+  .packages__list article:nth-of-type(3)::before {
+    background: url("../img/sprite.png") -12px -445px no-repeat; }
+  .packages__list article {
+    position: relative;
+    flex-basis: 440px;
+    padding: 220px 65px 65px 65px;
+    border: 1px solid #d7dbe8;
+    border-radius: 38px;
+    transition: box-shadow 200ms; }
+    .packages__list article:nth-child(2) {
+      margin: 0 50px; }
+    .packages__list article:hover {
+      box-shadow: 0 0 92px rgba(204, 204, 223, 0.71); }
+      .packages__list article:hover .packages__btn {
+        background-color: #6e45e2;
+        color: #fff; }
+    .packages__list article::before {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      background: url("../img/sprite.png") -4px -33px no-repeat;
+      top: 60px;
+      left: 0;
+      right: 0;
+      margin: auto; }
+    .packages__list article h3 {
+      font: 0.87em/2.28 "maven_probold", sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #9fa4af; }
+    .packages__list article .packages__price {
+      font: 3.75em/1.2 "maven_promedium", sans-serif;
+      color: #4f4f6f;
+      letter-spacing: -0.05em;
+      margin-bottom: 30px; }
+      .packages__list article .packages__price sup {
+        font-size: 0.36em;
+        letter-spacing: -0.1em; }
+      .packages__list article .packages__price span:last-child {
+        font-size: 0.3em;
+        letter-spacing: normal; }
+    .packages__list article p:last-of-type {
+      font: 1em/2.33 "maven_proregular", sans-serif;
+      margin-bottom: 49px; }
+
+.packages__btn {
+  padding: 20px 52px;
+  border: 1px solid #d7dbe8;
+  color: #c2c9db;
+  box-shadow: 0 0 21px 2px rgba(204, 204, 223, 0.5);
+  transition: background-color 300ms, color 300ms; }
+
+.map {
+  color: #fff;
+  text-align: center;
+  background: url("../img/map.jpg") center 92px no-repeat, linear-gradient(150deg, #6e45e2, #9adcd8);
+  background-blend-mode: multiply; }
+  .map .map__about {
+    margin-top: 160px;
+    margin-bottom: 12px; }
+
+.map__title {
+  font: 3.75em/1.2 "maven_promedium", sans-serif;
+  margin-bottom: 15px; }
+
+.map__wrapper {
+  margin: 0 auto;
+  padding-bottom: 180px; }
+
+.map__btn {
+  display: inline-block;
+  color: #c2c9db;
+  background-color: #fff;
+  padding: 18px 0;
+  width: 190px;
+  transition: background-color 300ms,  color 300ms; }
+  .map__btn:hover {
+    background-color: #6e45e2;
+    color: #fff; }
+  .map__btn:first-of-type {
+    margin-right: 7px; }
+
+@media screen and (max-width: 1899px) {
+  .packages__wrapper,
+  .map__wrapper {
+    width: 100%; }
+
+  .packages__list {
+    flex-wrap: wrap; } }
+@media screen and (max-width: 1526px) {
+  .packages__list article:nth-of-type(3) {
+    flex-basis: 100%;
+    margin-top: 50px; }
+
+  .packages__list article:nth-of-type(2) {
+    margin-right: 0; } }
+@media screen and (max-width: 1200px) {
+  .packages {
+    padding-top: 75px;
+    padding-bottom: 80px; }
+    .packages .packages__description {
+      margin-bottom: 70px; } }
+@media screen and (max-width: 996px) {
+  .packages__list article:nth-of-type(2),
+  .packages__list article:nth-of-type(1) {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-top: 50px; }
+
+  .packages .packages__description {
+    margin-bottom: 0; }
+
+  .packages__list article {
+    padding-top: 120px;
+    padding-bottom: 40px; }
+    .packages__list article::before {
+      width: 100px;
+      height: 100px;
+      background-size: 175%;
+      top: 29px; }
+    .packages__list article:nth-of-type(1)::before {
+      background-position: 0px -17px; }
+    .packages__list article:nth-of-type(2)::before {
+      background-position: -3px -155px;
+      background-size: 175%; }
+    .packages__list article:nth-of-type(3)::before {
+      background-position: -3px -309px;
+      background-size: 175%; }
+
+  .packages__list article .packages__price {
+    margin-bottom: 15px; }
+
+  .map__wrapper {
+    padding-bottom: 120px; }
+
+  .map .map__about {
+    margin-top: 95px; } }
+@media screen and (max-width: 650px) {
+  .packages__list article:nth-of-type(1),
+  .packages__list article:nth-of-type(2),
+  .packages__list article:nth-of-type(3) {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px; }
+
+  .packages {
+    padding-top: 50px;
+    padding-bottom: 10px; }
+
+  .map__btn {
+    width: 165px; }
+
+  .packages .packages__title {
+    font-size: 2.5em; }
+
+  .map__title {
+    font-size: 2.5em;
+    letter-spacing: 0; } }
+@media screen and (max-width: 455px) {
+  .map__btn {
+    display: block;
+    width: 175px;
+    margin: 0 auto; }
+
+  .map__btn:first-of-type {
+    margin: auto;
+    margin-bottom: 10px; }
+
+  .map .map__about {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+  .map__wrapper {
+    padding-bottom: 80px; } }
+.inner {
+  border-bottom: 1px solid #f2f2f3; }
+
+.footer__navigation {
+  padding: 42px 0; }
+
+footer .navigation__list {
+  align-items: baseline;
+  font: 1em/1.19 "maven_promedium", sans-serif; }
+  footer .navigation__list ul {
+    display: flex; }
+    footer .navigation__list ul li {
+      min-height: 61px; }
+    footer .navigation__list ul a {
+      display: block;
+      color: #6a6a77; }
+      footer .navigation__list ul a:hover {
+        color: #756edc;
+        border-bottom: none; }
+
+.footer__navigation .navigation__btn {
+  background-color: none;
+  color: #4f4f6f;
+  border: 1px solid #4f4f6f; }
+  .footer__navigation .navigation__btn:hover {
+    color: #fff; }
+
+.footer__navigation .navigation__logo {
+  color: #37374a; }
+
+.social__wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #6a6a77; }
+  .social__wrapper p {
+    font: 0.87em/1.19 "maven_promedium", sans-serif; }
+
+.social {
+  padding: 15px 0; }
+
+.social__list a {
+  margin-right: 10px; }
+  .social__list a:last-child {
+    margin-right: 0; }
+
+@media screen and (max-width: 1899px) {
+  .footer__wrapper,
+  .social__wrapper {
+    width: 100%; } }
+@media screen and (max-width: 996px) {
+  .footer__navigation {
+    padding: 25px 0; } }
+@media screen and (max-width: 650px) {
+  .social__wrapper p {
+    flex-basis: 250px; } }
+@media screen and (max-width: 455px) {
+  footer .navigation__list ul li {
+    min-height: 30px;
+    margin-bottom: 10px; }
+
+  .social__wrapper p {
+    flex-basis: 167px;
+    font-size: 0.7em; } }
 
 /*# sourceMappingURL=styles.css.map */

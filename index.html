@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pricing</title>
 	<link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
@@ -10,10 +11,10 @@
 	<header>
 		<div class="wrapper header__wrapper">
 			<section class="header__navigation navigation-block">
-				<div class="navigation__logo">
-					<img src="assets/img/logo.png" alt="logo">
-					<span>Misocial</span>
-				</div>
+				<a href="#" class="navigation__logo">
+					  <img src="assets/img/logo.png" alt="logo">
+					  <span>Misocial</span>
+				</a>
 				<section class="navigation__list">
 					<nav>
 						<ul>
@@ -40,9 +41,9 @@
 				</section>
 			</section>
 			<section class="header__content">
-				<p>— Social Marketing & Analytics —</p>
-				<h1>Pricing Table</h1>
-				<p>
+				<p class="header__about about">Social Marketing & Analytics</p>
+				<h1 class="header__title title">Pricing Table</h1>
+				<p class="header__description description">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
 				</p>
 				<a href="#bottom" class="header__arrow-bottom">Arrow-bottom</a>
@@ -51,18 +52,35 @@
 	</header>
 	<main>
 		<section class="packages">
+		<a name="bottom"></a>   <!--якорь -->
 		<div class="wrapper packages__wrapper">
-			<p><span>—</span> Misocial <span>—</span></p>
-			<h2>Select A Plan</h2>
-			<p>
+			<p class="packages__about about"> Misocial </p>
+			<h2 class="packages__title title">Select A Plan</h2>
+			<p class="packages__description description">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
 			</p>
 			<section class="packages__list">
 				<article>
 					<h3>Personal</h3>
-					<p><span>$</span><span>0</span><span>/month</span></p>
+					<p class="packages__price"><sup>$ </sup><span>0</span><span>/month</span></p>
 					<p>
-						Lorem ipsum dolor sit ameet sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris.Ea commodo consequat.
+						Lorem ipsum dolor sit ameet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris. Ea commodo consequat.
+					</p>
+					<a href="#" class="packages__btn btn">Select Plan</a>
+				</article>
+				<article>
+					<h3>Personal</h3>
+					<p class="packages__price"><sup>$ </sup><span>29</span><span>/month</span></p>
+					<p>
+						Lorem ipsum dolor sit ameet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris. Ea commodo consequat.
+					</p>
+					<a href="#" class="packages__btn btn">Select Plan</a>
+				</article>
+				<article>
+					<h3>Personal</h3>
+					<p class="packages__price"><sup>$ </sup><span>49</span><span>/month</span></p>
+					<p>
+						Lorem ipsum dolor sit ameet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris. Ea commodo consequat.
 					</p>
 					<a href="#" class="packages__btn btn">Select Plan</a>
 				</article>
@@ -71,57 +89,61 @@
 		</section>
 		<section class="map">
 		<div class="wrapper map__wrapper">
-			<p>Social Marketing & Analytics</p>
-			<p>Take control of your data</p>
+			<p class="map__about about">Social Marketing & Analytics</p>
+			<h2 class="map__title title">Take control of your data</h2>
 			<a href="#" class="map__btn btn">Get Started</a>
 			<a href="#" class="map__btn btn">Explore Features</a>
 		</div>
 		</section>
 	</main>	
 	<footer>
-		<div class="wrapper footer__wrapper">
-			<section class="footer__navigation navigation-block">
-				<div class="navigation__logo">
-					<img src="assets/img/logo.png" alt="logo">
-					<span>Misocial</span>
-				</div>
+	  <div class="inner">
+		  <div class="wrapper footer__wrapper">
+			  <section class="footer__navigation navigation-block">
+				  <a href="#" class="navigation__logo">
+					   <img src="assets/img/logo.png" alt="logo">
+					   <span>Misocial</span>
+				  </a>
 				<section class="navigation__list">
 					<nav>
 						<ul>
-							<li>
-								<a href="#">Home</a>
-							</li>
-							<li>
-								<a href="#">Why Misocial</a>
-							</li>
-							<li>
-								<a href="#">Features</a>
-							</li>
-							<li>
+						  <li>
+						  	<a href="#">Home</a>
+				     	</li>
+						  <li>
+							  <a href="#">Why Misocial</a>
+						  </li>
+						  <li>
+						    <a href="#">Features</a>
+						  </li>
+						  <li>
 								<a href="#">Articles</a>
-							</li>
-							<li>
+						  </li>
+						  <li>
 								<a href="#">Pricing</a>
-							</li>
-						</ul>
-					</nav>
-					<a href="#" class="navigation__btn btn">
-						Get Started
-					</a>
-				</section>
-			</section>
+						  </li>
+						 </ul>
+					 </nav>
+					 <a href="#" class="navigation__btn btn">
+						  Get Started
+				   </a>
+				  </section>
+			  </section>
+      </div>	
+    </div> 
 			<section class="social">
-				<p>
-					&copy;2017 Mass Impressions & Tranmautritam. Make the right impression
-				</p>
-				<div class="social__list">
-					<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-					<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-					<span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
-					<span><i class="fa fa-instagram" aria-hidden="true"></i></span>
-				</div>
-			</section>
-		</div>
+			  <div class="wrapper social__wrapper">
+				  <p>
+					  &copy;2017 Mass Impressions & Tranmautritam. Make the right impression
+		  		</p>
+			  	<div class="social__list">
+				  	<a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					  <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					  <a><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				  	<a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				  </div>
+		   </div>
+			</section>	
 	</footer>
 </body>
 </html>
